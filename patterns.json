@@ -1,1 +1,3485 @@
-
+[
+  {
+    "name": "GWorld",
+    "category": "Global",
+    "pattern": "48 8B 15 ? ? ? ? 0F 1F 40 ? 48 63 C1 ? ? ? ? ? ? ? ? ? ? ? ? 74 ? 8B 48 ? 83 F9 ? 75 ? 33 C0 C3 48 85 C0",
+    "xref_offset": 3,
+    "xref_instr_size": 7,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "FnamePool",
+    "category": "Global",
+    "pattern": "74 09 48 8D 15 ? ? ? ? EB 16",
+    "xref_offset": 5,
+    "xref_instr_size": 9,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "GObjects",
+    "category": "Global",
+    "pattern": "48 8B 05 ? ? ? ? 48 8D 14 C8",
+    "xref_offset": 3,
+    "xref_instr_size": 7,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "OwningGameInstance",
+    "category": "Struct",
+    "pattern": "48 8B 80 ? ? ? ? 48 85 C0 74 ? 48 8B 48 ? 48 63 40 ? 4C 8D 04 C1",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "PersistentLevel",
+    "category": "Struct",
+    "pattern": "48 8B 43 ? 48 85 C0 75 ? 8B 93 ? ? ? ? 48 8B 8B ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 1
+  },
+  {
+    "name": "LocalPlayers",
+    "category": "Struct",
+    "pattern": "48 8B 80 ? ? ? ? 48 85 C0 74 ? 48 8B 48 ? 48 63 40 ? 4C 8D 04 C1",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 15,
+    "disp_size": 1
+  },
+  {
+    "name": "GameState",
+    "category": "Struct",
+    "pattern": "48 8B 87 ? ? ? ? 48 63 8F ? ? ? ? 4C 8D 0C C8 49 3B C1",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "PlayerCameraManager",
+    "category": "Struct",
+    "pattern": "48 8B 80 ? ? ? ? 48 8B 1C D0 48 8B CF",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "AcknowledgedPawn",
+    "category": "Struct",
+    "pattern": "48 8B 83 ? ? ? ? 42 0F 28 04 10 42 0F 28 4C 10 10 48 8B 43",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "PlayerState",
+    "category": "Struct",
+    "pattern": "48 8D 34 C5 00 00 00 00 48 8B 81 ? ? ? ? 48 39 1C 06",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 11,
+    "disp_size": 4
+  },
+  {
+    "name": "RelativeRotation",
+    "category": "Struct",
+    "pattern": "66 0F 10 89 ? ? ? ? 66 0F 58 CA 66 0F 10 91 ? ? ? ? 66 0F 11 89",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 16,
+    "disp_size": 4
+  },
+  {
+    "name": "RootComponent",
+    "category": "Struct",
+    "pattern": "4C 89 75 00 4C 89 75 08 49 8B 04 24 48 8D 55 00 49 8B CC 48 8B 80 ? ? ? ? FF 15",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 22,
+    "disp_size": 4
+  },
+  {
+    "name": "Mesh",
+    "category": "Struct",
+    "pattern": "48 8B 08 48 8B 81 ? ? ? ? 8B 4F 70 89 4C 24 38 49 8B CA",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "ActorCluster",
+    "category": "Struct",
+    "pattern": "48 8B B0 ? ? ? ? 48 85 F6 74 ? 48 8B 47 ? 48 8D 4F",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "ActorClusterActor",
+    "category": "Struct",
+    "pattern": "48 85 F6 74 ? 48 8B 47 ? 48 8D 4F ? 48 8B 40 28 FF 15",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 8,
+    "disp_size": 1
+  },
+  {
+    "name": "PlayerStateArray",
+    "category": "Struct",
+    "pattern": "44 89 74 24 ? 48 8B 87 ? ? ? ? 48 89 45 ? 48 8B 87 ? ? ? ? 48 89 45 ? 48 85 C0",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 8,
+    "disp_size": 4
+  },
+  {
+    "name": "SpawnedCharacter",
+    "category": "Struct",
+    "pattern": "48 8B BD ? ? ? ? 48 8B 9D ? ? ? ? 8B 85 ? ? ? ? 41 39 C5 7C ? E9 ? ? ? ? 45 31 ED 41 39 C5 0F",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 10,
+    "disp_size": 4
+  },
+  {
+    "name": "PawnPrivate",
+    "category": "Struct",
+    "pattern": "48 8B 89 ? ? ? ? 48 85 C9 74 ? 48 8B 01 41 8B D0 48 8B 40 ? FF 15",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "TeamComponent",
+    "category": "Struct",
+    "pattern": "48 8B 81 A8 06 00 00 48 85 C0",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "BoneArray",
+    "category": "Struct",
+    "pattern": "48 8B 81 60 07 00 00 48 85 C0",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "Health",
+    "category": "Struct",
+    "pattern": "EB 08 F3 0F 10 80 ? ? ? ? 48 8B 5C 24 ? 48 8B 74 24 ? F3 0F 11 07",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "CapsuleComponent",
+    "category": "Struct",
+    "pattern": "48 83 E4 C0 48 8B 85 ? ? ? ? C5 FC 28 08 44 8B 9D F8 04 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 7,
+    "disp_size": 4
+  },
+  {
+    "name": "Shield",
+    "category": "Struct",
+    "pattern": "49 8B 07 49 8B CF 48 8B 80 ? ? ? ? FF 15 ? ? ? ? 84 C0 75 15",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 9,
+    "disp_size": 4
+  },
+  {
+    "name": "MaxShield",
+    "category": "Struct",
+    "pattern": "F2 0F 11 4C 24 68 F3 0F 10 8F ? ? ? ? F2 0F 11 44 24 60 F3 0F 10 87",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 10,
+    "disp_size": 4
+  },
+  {
+    "name": "DefaultMaxHealth",
+    "category": "Struct",
+    "pattern": "8B 81 50 03 00 00 48 8B 81 ? ? ? ? 4D 85 C0 74 09 49 89 80 48 03",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 9,
+    "disp_size": 4
+  },
+  {
+    "name": "TeamStateComponent",
+    "category": "Struct",
+    "pattern": "8B 87 70 02 00 00 48 8B 88 ? ? ? ? 48 8B 45 BF 48 89 45 67 48 81",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 9,
+    "disp_size": 4
+  },
+  {
+    "name": "SpectatorPawn",
+    "category": "Struct",
+    "pattern": "C4 E2 BD 92 1C 3E 48 8B 85 ? ? ? ? C4 62 7D 19 70 08 C4 62",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 9,
+    "disp_size": 4
+  },
+  {
+    "name": "MyHUD",
+    "category": "Struct",
+    "pattern": "48 8B 80 ? ? ? ? 0F B7 08 EB 09 8B CE EB 05 B9 33 00 00 00 66 89 4B",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "Owner",
+    "category": "Struct",
+    "pattern": "48 8D 8D ? ? ? ? E8 ? ? ? ? 48 8B 85 ? ? ? ? 0F 11 30 48 8D 45 20",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 15,
+    "disp_size": 4
+  },
+  {
+    "name": "Instigator",
+    "category": "Struct",
+    "pattern": "F6 C1 01 74 19 48 8B 8F ? ? ? ? 48 8B D3 48 8B 5C 24 30 48 83 C4 20",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 8,
+    "disp_size": 4
+  },
+  {
+    "name": "CapsuleHalfHeight",
+    "category": "Struct",
+    "pattern": "0F 57 C9 F3 0F 10 91 ? ? ? ? F2 0F 11 44 24 48 0F 10 81 50 03 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 7,
+    "disp_size": 4
+  },
+  {
+    "name": "CameraFOV",
+    "category": "Struct",
+    "pattern": "8B 81 80 05 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 2,
+    "disp_size": 4
+  },
+  {
+    "name": "CameraRotation",
+    "category": "Struct",
+    "pattern": "F3 0F 10 87 9C 05 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 4,
+    "disp_size": 4
+  },
+  {
+    "name": "ComponentToWorld",
+    "category": "Struct",
+    "pattern": "0F 28 80 00 03 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "RelativeLocation",
+    "category": "Struct",
+    "pattern": "66 0F 10 89 ? ? ? ? 66 0F 58 CA 66 0F 10 91 ? ? ? ? 66 0F 11 89",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 4,
+    "disp_size": 4
+  },
+  {
+    "name": "PlayerController",
+    "category": "Struct",
+    "pattern": "48 8B 01 48 85 C0 74 ? 48 8B 50 ? 48 85 D2 0F 85",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 11,
+    "disp_size": 1
+  },
+  {
+    "name": "PlayerArray",
+    "category": "Struct",
+    "pattern": "44 89 74 24 ? 48 8B 87 ? ? ? ? 48 89 45 ? 48 8B 87 ? ? ? ? 48 89 45 ? 48 85 C0",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 8,
+    "disp_size": 4
+  },
+  {
+    "name": "CameraPrivate",
+    "category": "Struct",
+    "pattern": "48 8D 8F ? ? ? ? 48 89 4C 24 ? 89 31 48 83 C1 10 E8 ? ? ? ? 90 48 8D 8F",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "ControlRotation",
+    "category": "Struct",
+    "pattern": "E9 ? ? ? ? F3 0F 10 87 ? ? ? ? 41 0F 57 C3 0F 57 D2 F3 0F 5A D0",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 9,
+    "disp_size": 4
+  },
+  {
+    "name": "ActorArray",
+    "category": "Struct",
+    "pattern": "48 8B 43 ? 48 85 C0 75 ? 8B 93 ? ? ? ? 48 8B 8B ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 18,
+    "disp_size": 4
+  },
+  {
+    "name": "ActorCount",
+    "category": "Struct",
+    "pattern": "48 8B 43 ? 48 85 C0 75 ? 8B 93 ? ? ? ? 48 8B 8B ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 11,
+    "disp_size": 4
+  },
+  {
+    "name": "DamageHandler",
+    "category": "Struct",
+    "pattern": "48 8B 96 ? ? ? ? 48 85 D2 0F 84 ? ? 00 00 49 8B 06 49 8B CE",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "Inventory",
+    "category": "Struct",
+    "pattern": "48 8B 8B ? ? ? ? 48 85 C9 74 06 E8 ? ? ? ? 90 48 8B 8B 00 0C 00 00 48 85 C9 74 06",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "BoundsScale",
+    "category": "Struct",
+    "pattern": "F3 0F 10 80 ? ? ? ? F3 0F 10 88 ? ? ? ? F3 0F 10 90 ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 12,
+    "disp_size": 4
+  },
+  {
+    "name": "LastSubmitTime",
+    "category": "Struct",
+    "pattern": "F3 0F 10 80 ? ? ? ? F3 0F 10 88 ? ? ? ? F3 0F 10 90 ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 20,
+    "disp_size": 4
+  },
+  {
+    "name": "LastSubmitTimeOnScreen",
+    "category": "Struct",
+    "pattern": "48 85 C0 74 ? F3 0F 10 80 ? ? ? ? 0F 5A C0 F2 0F 10 8D ? ? ? ? F2 0F 5C C8",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 9,
+    "disp_size": 4
+  },
+  {
+    "name": "BoneCount",
+    "category": "Struct",
+    "pattern": "45 33 C9 45 33 C0 48 8B CE 48 8B 80 ? ? ? ? FF 15 ? ? ? ? 48 8B 9F ? ? ? ? 48 63 BF ? ? ? ? 48 C1 E7 04",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 32,
+    "disp_size": 4
+  },
+  {
+    "name": "BoneArrayCache",
+    "category": "Struct",
+    "pattern": "C7 83 ? ? ? ? FF FF FF FF 48 89 83 ? ? ? ? 48 89 83 ? ? ? ? 48 89 83 ? ? ? ? 48 89 83 ? ? ? ? 48 89 83 ? ? ? ? 48 89 83 ? ? ? ? 48 89 83 ? ? ? ? 48 89 83 ? ? ? ? 89 83 ? ? ? ? C7 83 ? ? ? ? 80 00 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 48,
+    "disp_size": 4
+  },
+  {
+    "name": "TeamID",
+    "category": "Struct",
+    "pattern": "48 8B 87 ? ? ? ? 80 60 52 FD 48 8B 97 ? ? ? ? 4C 8B 87 ? ? ? ? 4C 8B 8A ? ? ? ? 4D 3B C8",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 28,
+    "disp_size": 4
+  },
+  {
+    "name": "WasAlly",
+    "category": "Struct",
+    "pattern": "49 8B D6 48 8B CE E8 ? ? ? ? 48 8B DE 41 80 BF ? ? ? ? 00 0F 85",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 17,
+    "disp_size": 4
+  },
+  {
+    "name": "IsDormant",
+    "category": "Struct",
+    "pattern": "0F B6 81 ? ? ? ? 88 02 C3 CC CC CC CC CC CC 48 83 EC 28 0F B6 02 38 81 ? ? ? ? 74 ? 84 C0 88 81 ? ? ? ? 48 8D 54 24 30 0F 95 44 24 30 48 81 C1 30 01 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "CurrentEquippable",
+    "category": "Struct",
+    "pattern": "48 8B 8B ? ? ? ? 48 85 C9 74 ? 48 8D 93 ? ? ? ? E8 ? ? ? ? 48 8B 83 ? ? ? ? 48 8B 93 ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "FiringStateComp",
+    "category": "Struct",
+    "pattern": "48 8B F8 48 85 C0 74 ? 48 8B C8 E8 ? ? ? ? 84 C0 74 ? 48 8B 0F 48 8B 81 ? ? ? ? 48 8B CF FF 15 ? ? ? ? 44 0F B6 E0 48 8B 0E 48 8B 81 ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 26,
+    "disp_size": 4
+  },
+  {
+    "name": "FiringStateComp_Old",
+    "category": "Struct",
+    "pattern": "48 89 BB ? ? ? ? FF 15 ? ? ? ? 48 89 BB ? ? ? ? 48 8B 8B ? ? ? ? E8 ? ? ? ? 48 89 BB ? ? ? ? 48 8B 5C 24 30 48 83 C4 20 5F C3",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 23,
+    "disp_size": 4
+  },
+  {
+    "name": "seed_data",
+    "category": "Struct",
+    "pattern": "48 8B 83 ? ? ? ? 48 85 C0 74 ? 48 8B 98 ? ? ? ? 48 85 DB 74 ? 48 8B 9B ? ? ? ? 48 85 DB 74 ? 48 8B CB E8 ? ? ? ? 84 C0 74 ? 48 8B CB 48 8B 5C 24 30 48 83 C4 20 5F",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 27,
+    "disp_size": 4
+  },
+  {
+    "name": "seed_dataadd",
+    "category": "Struct",
+    "pattern": "80 B8 ? ? ? ? 00 74 03 0F 57 F6 8B 86 ? ? ? ? 48 8B 8E ? ? ? ? 48 81 C1 ? ? ? ? 48 8D 55 ? 48 89 54 24 30",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 28,
+    "disp_size": 4
+  },
+  {
+    "name": "stability_component",
+    "category": "Struct",
+    "pattern": "48 83 EC 28 48 8B 81 ? ? ? ? 48 85 C0 75 ? 48 89 5C 24 30 48 89 7C 24 20 48 8B B9 ? ? ? ? 48 8B 07",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 7,
+    "disp_size": 4
+  },
+  {
+    "name": "error_power",
+    "category": "Struct",
+    "pattern": "48 89 5C 24 10 56 48 83 EC 50 48 8B D9 48 8B F2 48 8B 89 ? ? ? ? 48 85 C9 0F 84 ? ? ? ? 83 BB ? ? ? ? 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 34,
+    "disp_size": 4
+  },
+  {
+    "name": "error_retries",
+    "category": "Struct",
+    "pattern": "48 89 5C 24 10 56 48 83 EC 50 48 8B D9 48 8B F2 48 8B 89 ? ? ? ? 48 85 C9 0F 84 ? ? ? ? 83 BB ? ? ? ? 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 19,
+    "disp_size": 4
+  },
+  {
+    "name": "pregame_view_controller",
+    "category": "Struct",
+    "pattern": "48 8B 4C 24 ? 48 8B 01 BA 01 00 00 00 48 8B 40 08 FF 15 ? ? ? ? 48 8D B7 ? ? ? ? 48 8B 9F ? ? ? ? 8B 57 0C 89 55 80 48 8D 0D ? ? ? ? E8 ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 26,
+    "disp_size": 4
+  },
+  {
+    "name": "charm_map",
+    "category": "Struct",
+    "pattern": "48 8B CF E8 ? ? ? ? 48 8B F8 48 85 C0 0F 84 ? ? ? ? 48 8B 08 48 8B 81 ? ? ? ? 48 8B CF FF 15 ? ? ? ? 48 8B F0 48 8B 0F 48 8B 81 ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 26,
+    "disp_size": 4
+  },
+  {
+    "name": "projectile_component",
+    "category": "Struct",
+    "pattern": "F3 0F 10 80 ? ? ? ? 0F 54 C1 0F 2F C2 0F 87 ? ? ? ? F3 0F 10 80 ? ? ? ? E9 ? ? ? ? 48 8B 83 ? ? ? ? 48 8B 88 ? ? ? ? 48 8B 81 ? ? ? ? F3 0F 10 80 ? ? ? ? 0F 54 05 ? ? ? ? 0F 2F 05 ? ? ? ? 0F 97 C0",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 24,
+    "disp_size": 4
+  },
+  {
+    "name": "RelativeScale3D",
+    "category": "Struct",
+    "pattern": "66 0F 10 89 ? ? ? ? 66 0F 28 E1 66 0F 59 E2 F2 0F 12 D7 F2 44 0F 10 99 B8 01 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 4,
+    "disp_size": 4
+  },
+  {
+    "name": "DefuseTimer",
+    "category": "Struct",
+    "pattern": "C7 83 ? ? ? ? 00 00 00 3F 4C 89 B3 ? ? ? ? 66 C7 83 ? ? ? ? 00 00 C6 83",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 20,
+    "disp_size": 4
+  },
+  {
+    "name": "Timer",
+    "category": "Struct",
+    "pattern": "C7 83 ? ? ? ? 00 40 9C 46 C7 83 ? ? ? ? 00 00 00 3F 4C 89 B3 ? ? ? ? 66 C7 83",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 23,
+    "disp_size": 4
+  },
+  {
+    "name": "mtkv",
+    "category": "Struct",
+    "pattern": "94 70 FE FF 90 B8 ? ? ? ? 66 89 05 ? ? ? ? 4C 8D 0D",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "object_class",
+    "category": "Struct",
+    "pattern": "40 53 48 83 EC 20 48 8B 59 ? 48 8B 5B 48 48 85 DB 74 ? 48 89 7C 24 38 33 FF",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 9,
+    "disp_size": 1
+  },
+  {
+    "name": "super_class",
+    "category": "Struct",
+    "pattern": "E8 ? ? ? ? 48 3B D8 74 ? 48 8B 5B ? 48 85 DB 75 ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 13,
+    "disp_size": 1
+  },
+  {
+    "name": "get_charm_level_data_asset",
+    "category": "Struct",
+    "pattern": "48 8B 41 60 48 89 02 48 8B 41 68 48 89 42 08 48 8B 41 ? 48 89 42 10 48 8B C2 C3",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 18,
+    "disp_size": 1
+  },
+  {
+    "name": "get_charm_data_asset",
+    "category": "Struct",
+    "pattern": "48 8B 41 60 48 89 02 48 8B 41 ? 48 89 42 08 48 8B 41 70 48 89 42 10 48 8B C2 C3",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 10,
+    "disp_size": 1
+  },
+  {
+    "name": "get_skin_chroma_data_asset",
+    "category": "Struct",
+    "pattern": "E9 ? ? ? ? CC CC CC CC CC CC CC CC CC CC CC 48 8B 81 ? ? ? ? C3 CC CC CC CC CC CC CC CC 48 89 91 ? ? ? ? C3",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 19,
+    "disp_size": 4
+  },
+  {
+    "name": "get_skin_data_asset",
+    "category": "Struct",
+    "pattern": "E9 ? ? ? ? CC CC CC CC CC CC CC CC CC CC CC 48 8B 81 ? ? ? ? C3 CC CC CC CC CC CC CC CC 48 89 91 ? ? ? ? C3",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 19,
+    "disp_size": 4
+  },
+  {
+    "name": "get_skin_levels",
+    "category": "Struct",
+    "pattern": "48 83 C4 30 5F C3 CC CC CC CC CC CC CC CC CC CC CC CC 48 8B 81 ? ? ? ? C3 CC CC CC CC CC CC CC CC 48 89 5C 24 08 57 48 83 EC 30",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 21,
+    "disp_size": 4
+  },
+  {
+    "name": "get_charm_level",
+    "category": "Struct",
+    "pattern": "48 83 C4 78 C3 CC CC 8B 81 ? ? ? ? C3 CC CC CC CC CC CC CC CC CC 48 89 5C 24 08 57 48 83 EC 20 8B FA",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 9,
+    "disp_size": 4
+  },
+  {
+    "name": "equippable_models",
+    "category": "Struct",
+    "pattern": "FF 74 32 48 8B 86 ? ? ? ? 48 85 C0 74 78 49 63 EE 48 C1",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "skins",
+    "category": "Struct",
+    "pattern": "CC 00 00 8B 86 ? ? ? ? 29 86 40 02 00 00 48 89 F9 BA",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "possible_levels",
+    "category": "Struct",
+    "pattern": "C6 86 ? ? ? ? 01 8B 46 38 09 43 44 F2 0F 10 46 20",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 2,
+    "disp_size": 4
+  },
+  {
+    "name": "possible_levels1",
+    "category": "Struct",
+    "pattern": "C6 86 ? ? ? ? 01 8B 46 38 09 43 44 F2 0F 10 46 20",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 2,
+    "disp_size": 4
+  },
+  {
+    "name": "possible_levels2",
+    "category": "Struct",
+    "pattern": "48 85 C9 74 ? 80 B9 ? ? ? ? 00 74 ? 48 8B 01 48 8B 40 38 FF 15 ? ? ? ? B0 01",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 7,
+    "disp_size": 4
+  },
+  {
+    "name": "possible_chromas",
+    "category": "Struct",
+    "pattern": "C6 86 ? ? ? ? 01 8B 46 38 09 43 44 F2 0F 10 46 20",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 2,
+    "disp_size": 4
+  },
+  {
+    "name": "bIsUnlockedByConfig",
+    "category": "Struct",
+    "pattern": "C6 81 15 01 00 00 01 C3 CC CC CC CC CC CC CC CC C6 81 ? ? ? ? 01 C3 CC CC CC CC CC CC CC CC 48 83 EC 28",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 18,
+    "disp_size": 4
+  },
+  {
+    "name": "bIsOwned",
+    "category": "Struct",
+    "pattern": "C6 81 ? ? ? ? 01 C3 CC CC CC CC CC CC CC CC C6 81 0B 01 00 00 01 C3 CC CC CC CC CC CC CC CC 48 83 EC 28 48 8B 05 ? ? ? ? 48 85 C0 75 1A",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 2,
+    "disp_size": 4
+  },
+  {
+    "name": "bIsFavorite",
+    "category": "Struct",
+    "pattern": "C6 81 0A 01 00 00 01 C3 CC CC CC CC CC CC CC CC C6 81 ? ? ? ? 01 C3 CC CC CC CC CC CC CC CC 48 83 EC 28 48 8B 05 ? ? ? ? 48 85 C0 75 1A",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 18,
+    "disp_size": 4
+  },
+  {
+    "name": "dormant_server",
+    "category": "Struct",
+    "pattern": "0F B6 81 ? ? ? ? 88 02 C3 CC CC CC CC CC CC 40 53 48 83 EC 30 0F B6 02 48 8B D9 0F 10 05 ? ? ? ? 38 81 ? ? ? ? 74 ? 88 81 ? ? ? ? 48 8D 54 24 20 48 8B 41 30 48 83 C1 30 66 0F 7F 44 24 20 48 8B 40 38 FF 15 ? ? ? ? 0F B6 83 ? ? ? ? 48 8D 8B A0 00 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "get_screen_size1",
+    "category": "Struct",
+    "pattern": "8B 5E ? 8B 7E ? 48 8B 4E ? E8 ? ? ? ? 0F 28 F0 0F 28 C8 F3 0F 59 0D",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 2,
+    "disp_size": 1
+  },
+  {
+    "name": "get_screen_size2",
+    "category": "Struct",
+    "pattern": "8B 5E ? 8B 7E ? 48 8B 4E ? E8 ? ? ? ? 0F 28 F0 0F 28 C8 F3 0F 59 0D",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 1
+  },
+  {
+    "name": "fr3scomp",
+    "category": "Struct",
+    "pattern": "E8 ? ? ? ? C6 83 88 0F 00 00 01 48 89 B3 ? ? ? ? F2 0F 11 83",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 15,
+    "disp_size": 4
+  },
+  {
+    "name": "was_invisible",
+    "category": "Struct",
+    "pattern": "48 8B D9 C6 81 80 0F 00 00 00 80 B9 ? ? ? ? 00 0F 84 ? ? ? ? C6 45 ? 00 48 8D 0D",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 12,
+    "disp_size": 4
+  },
+  {
+    "name": "inventory_icon",
+    "category": "Struct",
+    "pattern": "49 8B 9F 20 0F 00 00 48 85 DB 74 ? 49 8B 97 ? ? ? ? 49 8D 8F ? ? ? ? 48 85 D2 48 0F 45 CA",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 15,
+    "disp_size": 4
+  },
+  {
+    "name": "font",
+    "category": "Struct",
+    "pattern": "48 8B 5C 24 30 48 83 C4 20 5F C3 CC CC CC CC CC 48 8B 81 ? ? ? ? C3 CC CC CC CC CC CC CC CC 48 89 91 ? ? ? ? C3",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 19,
+    "disp_size": 4
+  },
+  {
+    "name": "mesh1p",
+    "category": "Struct",
+    "pattern": "49 8B 9C 24 ? ? ? ? 48 85 DB 74 ? E8 ? ? ? ? 48 85 C0 74 ? 48 8D 50 ? 48 63 42 ? 3B 43 ? 7F ? 48 8B C8 48 8B 43 ? 48 39 14 C8 75 ? 49 8B 9C 24",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 4,
+    "disp_size": 4
+  },
+  {
+    "name": "mesh3p",
+    "category": "Struct",
+    "pattern": "48 8B 82 ? ? ? ? 49 89 81 ? ? ? ? 48 8B 82 ? ? ? ? 49 89 81 ? ? ? ? 48 8B 82 ? ? ? ? 49 89 81 ? ? ? ? 8B 82 ? ? ? ? 41 89 81 ? ? ? ? F2 0F 10 82",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 17,
+    "disp_size": 4
+  },
+  {
+    "name": "mesh1p_overlay",
+    "category": "Struct",
+    "pattern": "48 8B 83 ? ? ? ? 48 8D 54 24 ? 48 8D 4C 24 ? 0F 10 88 ? ? ? ? 0F 10 90",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "mesh_cosmetic_3p",
+    "category": "Struct",
+    "pattern": "48 8B 8B ? ? ? ? 48 85 C9 75 ? 48 8B 8B ? ? ? ? 48 85 C9 74 ? 48 8D 93",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 15,
+    "disp_size": 4
+  },
+  {
+    "name": "mesh_fp_flag",
+    "category": "Struct",
+    "pattern": "48 89 81 B8 01 00 00 80 B9 ? ? ? ? 00 74 ? C6 81 ? ? ? ? 00 48 81 C1",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 9,
+    "disp_size": 4
+  },
+  {
+    "name": "coolchams",
+    "category": "Struct",
+    "pattern": "48 89 87 10 04 00 00 48 89 8F ? ? ? ? 43 0F B7 84 7C ? ? ? ? 49 8B 9C C4",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 10,
+    "disp_size": 4
+  },
+  {
+    "name": "mesh1pgun",
+    "category": "Struct",
+    "pattern": "48 8B 83 ? ? ? ? 48 8D 55 ? 45 33 C9 44 88 6C 24 20 45 33 C0 48 8B 88 ? ? ? ? 0F 10 81",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 25,
+    "disp_size": 4
+  },
+  {
+    "name": "mesh3pgun",
+    "category": "Struct",
+    "pattern": "49 8B 8C 24 ? ? ? ? E8 ? ? ? ? 49 8B 84 24 ? ? ? ? 48 8B 88 ? ? ? ? 48 85 C9 74 ? 45 33 C0",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 17,
+    "disp_size": 4
+  },
+  {
+    "name": "fresnelcomponent",
+    "category": "Struct",
+    "pattern": "48 8B 07 48 8B 80 ? ? ? ? 48 85 C0 0F 84 ? ? ? ? 48 8B 40 ? 4C 89 AD ? ? ? ? 48 89 85 ? ? ? ? 48 85 C0",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "BlindManagerComponent",
+    "category": "Struct",
+    "pattern": "48 8B 48 ? 48 8B 91 ? ? ? ? 48 63 81 ? ? ? ? 48 8D 0C 40 4C 8D 0C CA 49 3B D1 74",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 7,
+    "disp_size": 4
+  },
+  {
+    "name": "skymeshcomponent",
+    "category": "Struct",
+    "pattern": "8B 40 58 FF 15 ? ? ? ? 90 48 8B 8D ? ? ? ? 48 85 C9 74 06 E8 ? ? ? ? 90 48 8B 8D D0 00 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 13,
+    "disp_size": 4
+  },
+  {
+    "name": "skyboxmeshcomponent",
+    "category": "Struct",
+    "pattern": "8B 40 58 FF 15 ? ? ? ? 90 48 8B 8D ? ? ? ? 48 85 C9 74 06 E8 ? ? ? ? 90 48 8B 8D D0 00 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 13,
+    "disp_size": 4
+  },
+  {
+    "name": "flashend",
+    "category": "Struct",
+    "pattern": "C4 C1 79 7E C3 48 8B 40 ? 48 63 C9 48 89 4C 24 40",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 8,
+    "disp_size": 1
+  },
+  {
+    "name": "WireFrame",
+    "category": "Struct",
+    "pattern": "48 8B D9 E8 ? ? ? ? 80 8B ? ? ? ? 01 48 8B CB E8 ? ? ? ? 48 8D 8B",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 10,
+    "disp_size": 4
+  },
+  {
+    "name": "bForceWireframe",
+    "category": "Struct",
+    "pattern": "E8 ? ? ? ? F6 83 ? ? ? ? 01 48 C7 83 ? ? ? ? 00 00 00 00 75 ? 48 8D 93",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 7,
+    "disp_size": 4
+  },
+  {
+    "name": "WireFrame2",
+    "category": "Struct",
+    "pattern": "41 5F 41 5E 41 5D 41 5C 5D C3 CC CC CC CC 48 8B 81 ? ? ? ? C3 CC CC CC CC CC CC CC CC 48 89 5C 24 18 48 89 6C 24 20",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 17,
+    "disp_size": 4
+  },
+  {
+    "name": "WireFrame3",
+    "category": "Struct",
+    "pattern": "F1 48 89 DA 41 B8 ? ? ? ? E8 ? ? ? ? 4D 85 F6",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "skin_pointer",
+    "category": "Struct",
+    "pattern": "48 8B 75 ? 66 C7 86 ? ? ? ? 01 00 48 8B 96 ? ? ? ? 48 85 D2",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 16,
+    "disp_size": 4
+  },
+  {
+    "name": "skin_pointer_2",
+    "category": "Struct",
+    "pattern": "48 8B 80 ? ? ? ? 48 85 C0 74 2C 48 8B 80 ? ? ? ? 48 85 C0 74 20 80 B8 ? ? ? ? 06 75 17 48 8D 4B C8",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 15,
+    "disp_size": 4
+  },
+  {
+    "name": "skin_pointer_3",
+    "category": "Struct",
+    "pattern": "48 8B 80 ? ? ? ? 48 85 C0 74 2C 48 8B 80 ? ? ? ? 48 85 C0 74 20 80 B8 ? ? ? ? 06 75 17 48 8D 4B C8",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 26,
+    "disp_size": 4
+  },
+  {
+    "name": "skin_data_asset",
+    "category": "Struct",
+    "pattern": "48 8B 99 ? ? ? ? 48 85 DB 74 ? 48 8B 81 ? ? ? ? 48 81 C1 ? ? ? ? 48 85 C0 4C 89 74 24 ? 4C 89 5C 24 ? 48 0F 45 C8",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 15,
+    "disp_size": 4
+  },
+  {
+    "name": "viewport_world",
+    "category": "Struct",
+    "pattern": "80 B9 A1 00 00 00 00 0F 85 ? ? 00 00 48 8D 59 58 48 89 5C 24 ? 48 8B CB FF 15 ? ? ? ? 90 48 8B 8F ? ? ? ? 48 85 C9 74 ? 48 8B 01 48 8B 40 40 FF 15 ? ? ? ? 48 8B 8F ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 35,
+    "disp_size": 4
+  },
+  {
+    "name": "SetCameraPOVHook",
+    "category": "Struct",
+    "pattern": "41 80 B8 ? ? ? ? 01 75 04 B0 01 EB 02 32 C0",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "viewport_gameinstance",
+    "category": "Struct",
+    "pattern": "80 B9 A1 00 00 00 00 0F 85 ? ? 00 00 48 8D 59 58 48 89 5C 24 ? 48 8B CB FF 15 ? ? ? ? 90 48 8B 8F ? ? ? ? 48 85 C9 74 ? 48 8B 01 48 8B 40 40 FF 15 ? ? ? ? 48 8B 8F ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 60,
+    "disp_size": 4
+  },
+  {
+    "name": "engine",
+    "category": "Struct",
+    "pattern": "8B 41 38 C3 CC CC CC CC CC CC CC CC CC CC CC CC 48 8B 41 ? C3 CC CC CC CC CC CC CC CC CC CC CC 40 55 53 56 57",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 19,
+    "disp_size": 1
+  },
+  {
+    "name": "local_controller",
+    "category": "Struct",
+    "pattern": "48 8B 80 D8 01 00 00 48 85 C0 74 ? 48 8B 48 40 48 63 40 48 4C 8D 04 C1 49 3B C8 74 ? 48 8B 01 48 85 C0 74 ? 48 8B 50 ? 48 85 D2 75 2D",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 40,
+    "disp_size": 1
+  },
+  {
+    "name": "Equippable",
+    "category": "Struct",
+    "pattern": "32 DB E9 ? ? 00 00 32 DB 48 8B 8D ? ? ? ? 48 85 C9 74 ? E8 ? ? ? ? 90 84 DB 74",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 12,
+    "disp_size": 4
+  },
+  {
+    "name": "AccountLevel",
+    "category": "Struct",
+    "pattern": "44 8B 9B ? ? ? ? 44 89 44 24 ? 44 89 5C 24 ? 45 39 75 ? 0F 8E",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "HideAccountLevel",
+    "category": "Struct",
+    "pattern": "44 8B 83 ? ? ? ? 45 33 F6 44 8B 9B ? ? ? ? 44 89 44 24 ? 44 89 5C 24 ? 45 39 75",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "player_name_private",
+    "category": "Struct",
+    "pattern": "48 8B 8D 18 05 00 00 48 85 C9 74 ? E8 ? ? ? ? 90 48 8D 8D ? ? ? ? E8 ? ? ? ? 48 8D 8D",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 21,
+    "disp_size": 4
+  },
+  {
+    "name": "get_player_id",
+    "category": "Struct",
+    "pattern": "C7 83 ? ? ? ? 00 00 80 BF 66 C7 83 ? ? ? ? FF FF C7 83 ? ? ? ? 00 00 80 BF 44 89 83",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 2,
+    "disp_size": 4
+  },
+  {
+    "name": "get_ping",
+    "category": "Struct",
+    "pattern": "66 C7 83 ? ? ? ? FF FF C7 83 ? ? ? ? 00 00 80 BF 44 89 83 ? ? ? ? 44 88 83",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 22,
+    "disp_size": 4
+  },
+  {
+    "name": "PlatformPlayer",
+    "category": "Struct",
+    "pattern": "F6 C2 02 48 8D B0 ? ? ? ? 75 ? 48 8B B0 ? ? ? ? 0F B7 36 EB ? BE 39 00 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 15,
+    "disp_size": 4
+  },
+  {
+    "name": "RiotTag",
+    "category": "Struct",
+    "pattern": "48 8B 8D 28 05 00 00 48 85 C9 74 06 E8 ? ? ? ? 90 48 8B 8D ? ? ? ? 48 85 C9 74 06 E8 ? ? ? ? 90 48 8D 8D ? ? ? ? E8",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 21,
+    "disp_size": 4
+  },
+  {
+    "name": "RiotName",
+    "category": "Struct",
+    "pattern": "48 8B 8D 28 05 00 00 48 85 C9 74 06 E8 ? ? ? ? 90 48 8B 8D ? ? ? ? 48 85 C9 74 06 E8 ? ? ? ? 90 48 8D 8D ? ? ? ? E8 ? ? ? ? 48 8D 8D ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 51,
+    "disp_size": 4
+  },
+  {
+    "name": "CompetitiveTier",
+    "category": "Struct",
+    "pattern": "0F B6 82 ? ? ? ? 44 8B 8A ? ? ? ? 44 0F B6 82 ? ? ? ? F2 0F 11 44 24 ? F3 0F 10",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 10,
+    "disp_size": 4
+  },
+  {
+    "name": "LeaderboardPosition",
+    "category": "Struct",
+    "pattern": "40 53 55 56 57 41 56 48 83 EC 40 48 8B DA 0F 57 C0 8B 92 ? ? ? ? 48 8B F9 8B B3 ? ? ? ? 48 8B 43",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 19,
+    "disp_size": 4
+  },
+  {
+    "name": "CameraRadar",
+    "category": "Struct",
+    "pattern": "41 56 41 57 48 83 EC 20 48 8B B9 ? ? ? ? 48 8B D9 E8 ? ? ? ? 8B 8B ? ? ? ? 45 33 FF",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 11,
+    "disp_size": 4
+  },
+  {
+    "name": "death_reaction_component",
+    "category": "Struct",
+    "pattern": "4C 03 48 ? 48 8B 87 ? ? ? ? 48 8B 89 ? ? ? ? 4C 89 54 24 ? 4C 89 4C 24 ? 48 8B 50",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 14,
+    "disp_size": 4
+  },
+  {
+    "name": "montage_effect_override",
+    "category": "Struct",
+    "pattern": "8B 87 ? ? ? ? 48 8B 97 ? ? ? ? 4C 8B 8F ? ? ? ? 89 44 24 ? 48 89 F1 45 31 C0",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 9,
+    "disp_size": 4
+  },
+  {
+    "name": "montage_effect_override_context",
+    "category": "Struct",
+    "pattern": "4C 8B 8F ? ? ? ? 89 44 24 ? 48 89 F1 45 31 C0 E8 ? ? ? ? 8B 47 08",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "OwningGameInstance_legacy",
+    "category": "Struct",
+    "pattern": "45 33 C0 41 8D 50 04 48 8D 8D ? ? ? ? E8 ? ? ? ? 48 8B 85 ? ? ? ? 0F 11 30 48 8D 85 A0 05 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 10,
+    "disp_size": 4
+  },
+  {
+    "name": "viewport_client",
+    "category": "Struct",
+    "pattern": "48 39 BB ? ? ? ? 74 ? 48 8D 8B ? ? ? ? E8 ? ? ? ? 48 8B 83 ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 24,
+    "disp_size": 4
+  },
+  {
+    "name": "Levels",
+    "category": "Struct",
+    "pattern": "C5 F9 11 99 ? ? ? ? C5 E1 57 DB C5 F9 2E FB 49 B8 00 00 00 00 00 00 F0 3F",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 4,
+    "disp_size": 4
+  },
+  {
+    "name": "ComponentVelocity",
+    "category": "Struct",
+    "pattern": "C5 F9 57 C0 C4 E2 7D 19 D5 C4 A1 7B 10 9C 11 ? ? ? ? C4 A1 61 16 A4 11 B0 01 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 15,
+    "disp_size": 4
+  },
+  {
+    "name": "LastRenderTime",
+    "category": "Struct",
+    "pattern": "F2 41 0F 11 86 ? ? ? ? 8B 05 ? ? ? ? 41 89 86 8C 04 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "SpectatedPlayer",
+    "category": "Struct",
+    "pattern": "0F 11 87 ? ? ? ? 0F 10 83 00 07 00 00 0F 11 87 00 07 00 00 E8 ? ? ? ? 83 ED 01",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "WasIntangible",
+    "category": "Struct",
+    "pattern": "C6 84 24 51 0F 00 00 00 C6 84 24 52 0F 00 00 4E C6 84 24 ? ? ? ? 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 19,
+    "disp_size": 4
+  },
+  {
+    "name": "bAlive",
+    "category": "Struct",
+    "pattern": "88 83 ? ? ? ? 41 0F B6 87 D2 01 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 2,
+    "disp_size": 4
+  },
+  {
+    "name": "DamageSections",
+    "category": "Struct",
+    "pattern": "75 23 48 8B 96 ? ? ? ? 48 83 C2 01",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "Life",
+    "category": "Struct",
+    "pattern": "41 0F B6 97 ? ? ? ? 4C 89 F1",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 4,
+    "disp_size": 4
+  },
+  {
+    "name": "MaxLife",
+    "category": "Struct",
+    "pattern": "C5 FB 10 99 ? ? ? ? C5 F9 10 A1 88 01 00 00 C4 E3 75 18 CB 01",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 4,
+    "disp_size": 4
+  },
+  {
+    "name": "bAliveSection",
+    "category": "Struct",
+    "pattern": "C4 E2 75 2E 91 ? ? ? ? C4 62 75 2E 81 40 01 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "LocalBlindState",
+    "category": "Struct",
+    "pattern": "C5 F9 10 89 ? ? ? ? C5 FB 10 99 28 01 00 00 C5 F9 10 A1 88 01 00 00 C4 E3 75 18 CB 01",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 4,
+    "disp_size": 4
+  },
+  {
+    "name": "GunRecoveryTime",
+    "category": "Struct",
+    "pattern": "C7 81 8C 1B 00 00 00 00 80 3F C7 81 ? ? ? ? FC FC 7F 3F C7 81 94 1B 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 12,
+    "disp_size": 4
+  },
+  {
+    "name": "Stability_Mobile",
+    "category": "Struct",
+    "pattern": "41 88 96 ? ? ? ? 49 89 96 10 11 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "TotemModels",
+    "category": "Struct",
+    "pattern": "C5 F9 11 A9 00 03 00 00 C5 F9 13 89 10 03 00 00 C5 FD 11 81 18 03 00 00 48 89 81 ? ? ? ? C5 FD 10 81 50 01 00 00 C5 FD 10 89 C0 01 00 00 C5 F5 59 99 A0 01 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 27,
+    "disp_size": 4
+  },
+  {
+    "name": "CharmDataAsset",
+    "category": "Struct",
+    "pattern": "0F 11 81 ? ? ? ? 0F 11 81 E8 0F 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "CosmeticRandomSeed",
+    "category": "Struct",
+    "pattern": "41 C7 86 ? ? ? ? FF FF FF FF 41 89 96 64 10 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "AttachName",
+    "category": "Struct",
+    "pattern": "48 8D 88 ? ? ? ? 48 3B C6",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "ProcMeshBodySetup",
+    "category": "Struct",
+    "pattern": "0F 11 81 ? ? ? ? 48 89 81 F8 06 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "PlantedAtSite",
+    "category": "Struct",
+    "pattern": "49 8D 9D ? ? ? ? 41 8B CB",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "BombDefused",
+    "category": "Struct",
+    "pattern": "80 BF ? ? ? ? 00 0F 85 CD 00 00 00 40 3A B7 B8 05 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 2,
+    "disp_size": 4
+  },
+  {
+    "name": "multi_projectile_offsets",
+    "category": "Struct",
+    "pattern": "45 33 F6 44 8B 65 ? 48 8B 86 ? ? ? ? 0F 28 CF F2 41 0F 59",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 10,
+    "disp_size": 4
+  },
+  {
+    "name": "projectiles_per_shot",
+    "category": "Struct",
+    "pattern": "44 8B 89 ? ? ? ? 8B 81 ? ? ? ? 41 8B 4D 00 85 C0 74",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "randomly_rotate_offsets",
+    "category": "Struct",
+    "pattern": "38 86 ? ? ? ? 74 ? 48 8B 8E ? ? ? ? 48 81 C1 D8 00 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 2,
+    "disp_size": 4
+  },
+  {
+    "name": "resources_consumed_per_shot",
+    "category": "Struct",
+    "pattern": "44 8B 89 ? ? ? ? 8B 81 ? ? ? ? 41 8B 4D 00 85 C0 74",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 9,
+    "disp_size": 4
+  },
+  {
+    "name": "rng_initial_seed",
+    "category": "Struct",
+    "pattern": "48 8B 8E ? ? ? ? 48 8B 45 ? 8B 00 89 81 ? ? ? ? 89 81",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 15,
+    "disp_size": 4
+  },
+  {
+    "name": "rng_current_seed",
+    "category": "Struct",
+    "pattern": "48 8B 8E ? ? ? ? 48 8B 45 ? 8B 00 89 81 ? ? ? ? 89 81 ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 21,
+    "disp_size": 4
+  },
+  {
+    "name": "character_force_zero_error_power",
+    "category": "Struct",
+    "pattern": "0F B6 87 ? ? ? ? 88 85 ? ? ? ? C6 87 ? ? ? ? 00 88 9D",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "component_owner",
+    "category": "Struct",
+    "pattern": "C3 CC CC CC CC CC CC CC CC CC 48 8B 81 ? ? ? ? C3 CC CC CC CC CC CC CC CC 48 89 5C 24 08 57",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 13,
+    "disp_size": 4
+  },
+  {
+    "name": "FNameState",
+    "category": "Global",
+    "pattern": "74 09 48 8D 15 ? ? ? ? EB 16",
+    "xref_offset": 5,
+    "xref_instr_size": 9,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "fpak_platform_file",
+    "category": "Global",
+    "pattern": "48 89 5C 24 ? 57 48 83 EC ? 48 8B 1D ? ? ? ? 48 85 DB 74 ? 48 8B CB",
+    "xref_offset": 13,
+    "xref_instr_size": 17,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "bone_matrix",
+    "category": "ESP",
+    "pattern": "48 8B C4 55 53 56 57 41 54 41 56 41 57 48 8D A8 ? ? ? ? 48 81 EC 20 02 00 00 0F 29 70 ? 0F 29 78 ? 44 0F 29 40 ? 44 0F 29 48 ? 44 0F 29 90 ? ? ? ? 44 0F 29 98 ? ? ? ? 44 0F 29 A0 ? ? ? ? 44 0F 29 A8",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "set_ares_outline_mode",
+    "category": "ESP",
+    "pattern": "48 89 5C 24 10 48 89 6C 24 18 57 48 83 EC 20 41 0F B6 D8 0F B6 EA 48 8B F9 38 91",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "MakeRenderStateDirty",
+    "category": "ESP",
+    "pattern": "48 89 5C 24 ? 55 56 57 41 54 41 55 41 56 41 57 48 8D AC 24 ? ? ? ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 85 ? ? ? ? 41 8B F0",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "process_event",
+    "category": "Aimbot",
+    "pattern": "40 55 56 57 41 54 41 55 41 56 41 57 48 81 EC ? ? ? ? 48 8D 6C 24 ? 48 89 9D ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C5 48 89 85 ? ? ? ? 4D 8B E0",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "fmemory_malloc",
+    "category": "Aimbot",
+    "pattern": "48 89 5C 24 ? 57 48 83 EC ? 48 8B F9 8B DA 48 8B 0D ? ? ? ? 48 85 C9",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "get_spread_values",
+    "category": "Aimbot",
+    "pattern": "40 53 48 83 EC ? 48 8B C1 48 8B DA 48 81 C1",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "get_spread_angles",
+    "category": "Aimbot",
+    "pattern": "48 8B C4 48 89 58 ? 48 89 68 ? 48 89 70 ? 48 89 78 ? 41 54 41 56 41 57 48 83 EC ? 0F 29 70 ? 0F 29 78 ? 0F 28 F3",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "get_spread_angles_multi",
+    "category": "Aimbot",
+    "pattern": "48 8B C4 48 89 58 08 48 89 68 18 48 89 70 20 48 89 50 10 57 41 54 41 55",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "to_vector_and_normalize",
+    "category": "Aimbot",
+    "pattern": "48 89 5C 24 ? 57 48 83 EC ? F2 0F 10 0D",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "to_angle_and_normalize",
+    "category": "Aimbot",
+    "pattern": "48 89 5C 24 ? 57 48 83 EC ? 0F 29 74 24 ? 48 8B DA 0F 29 7C 24 ? 0F 57 F6",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "GetFiringLocationAndDirection",
+    "category": "Aimbot",
+    "pattern": "48 89 5C 24 ? 48 89 74 24 ? 48 89 7C 24 ? 41 56 48 83 EC ? ? ? ? 41 0F B6 F9",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "rotate_angle_axis",
+    "category": "Aimbot",
+    "pattern": "40 53 48 83 EC 20 F2 0F 59 15 ? ? ? ? 48 8B DA E8 ? ? ? ? 48 8B C3 48 83 C4 20 5B C3",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "rotate_vector_by_rotator",
+    "category": "Aimbot",
+    "pattern": "48 8B C4 48 89 58 18 57 48 81 EC D0 00 00 00 0F 29 70 E8 0F 29 78 D8 48 8B 05 ? ? ? ? 48 33",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "get_registered_stability",
+    "category": "Aimbot",
+    "pattern": "48 83 EC 28 48 8B 81 90 ? ? ? 48 85 C0 74",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "calculate_projectile_count",
+    "category": "Aimbot",
+    "pattern": "85 D2 75 09 48 8B 44 24 28 44 89 00 C3 3B D1",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "get_projectile_offset_scale",
+    "category": "Aimbot",
+    "pattern": "48 89 5C 24 10 56 48 83 EC 30 48 8B F1 0F 29 74 24 20",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "is_weapon_feature_enabled",
+    "category": "Aimbot",
+    "pattern": "40 53 48 83 EC 20 44 0F B6 C2 48 8B D9",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "get_available_resource",
+    "category": "Aimbot",
+    "pattern": "48 83 EC 28 48 8B 81 90 ? ? ? 48 85 C0 74",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "get_firing_location_direction",
+    "category": "Aimbot",
+    "pattern": "48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 48 83 EC ? 48 8B EA 48 8B D9",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "get_owning_character",
+    "category": "Aimbot",
+    "pattern": "40 53 48 83 EC 20 41 83 78 ? ? 4C 8B D2 4C 8B C9 75 ? 49 8B 40 ? 48 8B 18 80 7B ? 00 74 ? 4C 8B C3 E8 ? ? ? ? 33 C9 84 C0 48 0F 45 CB 48 8B C1 48 83 C4 20 5B C3",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "get_feature_context",
+    "category": "Aimbot",
+    "pattern": "48 89 5C 24 ? 57 48 83 EC ? 48 8B D9 48 8B FA 48 8B 89",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "magic",
+    "category": "Aimbot",
+    "pattern": "89 49 08 4D 85 FF 74 2B",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "TriggerVEH",
+    "category": "Aimbot",
+    "pattern": "48 8B 41 ? C3 48 8D 05 ? ? ? ? C3 CC CC CC CC CC CC CC CC CC CC CC CC CC 48 83 C1 08",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "static_find_object",
+    "category": "UnlockAll",
+    "pattern": "40 55 53 56 57 41 54 41 55 41 56 41 57 48 8D AC 24 ? ? ? ? 48 81 EC ? ? ? ? 0F 29 B4 24 ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 85 ? ? ? ? 45 0F B6 E9",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "static_laod_object",
+    "category": "UnlockAll",
+    "pattern": "40 55 53 56 57 41 54 41 55 41 56 41 57 48 8D AC 24 ? ? ? ? 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 85 ? ? ? ? 4D 8B E1 49 8B F0 4C 8B F1 48 89 54 24 ? 8B 85 ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "get_fpak_platform_file",
+    "category": "UnlockAll",
+    "pattern": "48 89 5C 24 ? 57 48 83 EC ? 48 8B 1D ? ? ? ? 48 85 DB 74 ? 48 8B CB",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "bypass_pak_signing",
+    "category": "UnlockAll",
+    "pattern": "48 89 5C 24 18 48 89 4C 24 08 55 56 57 48 83 EC 20 49 8B E8",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "mount_custom_pak",
+    "category": "UnlockAll",
+    "pattern": "48 89 5C 24 08 55 56 57 41 54 41 55 41 56 41 57 48 8D AC 24",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "play_finisher_effect",
+    "category": "UnlockAll",
+    "pattern": "48 8B C4 48 89 58 10 48 89 70 18 55 57 41 56 48 8D A8 ? ? ? ? 48 81 EC ? ? 00 00 0F 29 70 D8 48 8B 05 ? ? ? ? 48 33 C4 48 89 85 ? ? ? ? 48 8B F9 45 33 F6 48 8B B1 ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "set_control_rot",
+    "category": "Address",
+    "pattern": "84 C0 74 0E 4D 8B C7 49 8B D6 48 8B CF E8 0E FE FF FF 48 83 C3 08 48 3B DE 75 C5 4C",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "SetControlRot",
+    "category": "Address",
+    "pattern": "84 C0 74 0E 4D 8B C7 49 8B D6 48 8B CF E8 0E FE FF FF 48 83 C3 08 48 3B DE 75 C5 4C",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "line_of_sight",
+    "category": "Address",
+    "pattern": "8E D8 0A 00 00 E8 C6 FD 01 00 48 8D 96 58 0B 00 00 0F 28 D6 48 8D 8E 98 0B 00 00 E8",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "LineOfSight",
+    "category": "Address",
+    "pattern": "8E D8 0A 00 00 E8 C6 FD 01 00 48 8D 96 58 0B 00 00 0F 28 D6 48 8D 8E 98 0B 00 00 E8",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "get_view_rotation",
+    "category": "Address",
+    "pattern": "8D 4D D7 48 89 4C 24 30 4C 89 6C 24 28 48 8D 4D B7 48 89 4C 24 20 4C 8B CE 4D 8B C6",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "GetViewRotation",
+    "category": "Address",
+    "pattern": "8D 4D D7 48 89 4C 24 30 4C 89 6C 24 28 48 8D 4D B7 48 89 4C 24 20 4C 8B CE 4D 8B C6",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "get_base_aim_rotation",
+    "category": "Address",
+    "pattern": "45 58 4C 8B D0 4C 89 84 24 80 00 00 00 4D 85 C0 0F 84 7C 02 00 00 49 8B 40 10 48 85",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "GetBaseAimRotation",
+    "category": "Address",
+    "pattern": "45 58 4C 8B D0 4C 89 84 24 80 00 00 00 4D 85 C0 0F 84 7C 02 00 00 49 8B 40 10 48 85",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "get_actor_eyes",
+    "category": "Address",
+    "pattern": "60 40 84 F6 74 13 49 83 BE D0 00 00 00 00 75 09 49 8B CE",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "GetActorEyes",
+    "category": "Address",
+    "pattern": "60 40 84 F6 74 13 49 83 BE D0 00 00 00 00 75 09 49 8B CE",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "FiringStateCompMain",
+    "category": "Struct",
+    "pattern": "48 8B 89 ? ? ? ? 48 8B 01 48 8B 80 80 00 00 00 FF 15 ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "FiringStateCompAlt",
+    "category": "Struct",
+    "pattern": "01 00 00 48 8B 89 ? ? ? ? E8 D7 F8 01 00 48 8B D8 48 85",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "FiringStateCompAlt2",
+    "category": "Struct",
+    "pattern": "89 47 1C 8B 83 ? ? ? ? 89 47 20 8B 83 10 12 00 00 89",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "StabilityComponent",
+    "category": "Struct",
+    "pattern": "0F B6 54 24 30 48 85 C0 40 0F 95 C6 48 03 F0 48 89 73 20 48 8B 07 48 8B 80 ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 25,
+    "disp_size": 4
+  },
+  {
+    "name": "StabilityComps",
+    "category": "Struct",
+    "pattern": "89 4D A0 48 8B 85 ? ? ? ? 48 89 44 24 68 45 33 F6 44 89",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "Stab_ErrorVar",
+    "category": "Struct",
+    "pattern": "F6 74 5C 48 8B 8F ? ? ? ? BA FF FF FF FF 84 DB 0F 45 15",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "Stab_DefaultErrorPower",
+    "category": "Struct",
+    "pattern": "48 8B EA 48 8B 8D ? ? ? ? E8 9B EC 34 F8 48 83 C4 20 5D",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "Stab_PitchRecoil",
+    "category": "Struct",
+    "pattern": "00 00 01 8B 85 ? ? ? ? 89 05 ? ? ? ? C7 05 05",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "Stab_YawRecoil",
+    "category": "Struct",
+    "pattern": "1C 00 00 8B 82 ? ? ? ? 41 89 81 D4 1C 00 00 EB 38 8B",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "Stab_StateMult",
+    "category": "Struct",
+    "pattern": "06 00 00 48 8B 8D ? ? ? ? 85 D2 74 16 48 8D 41 10 90 80",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "Stab_ADSMult",
+    "category": "Struct",
+    "pattern": "00 00 00 48 8B 8D ? ? ? ? 48 33 CC E8 BD E9 A5 07 4C 8D",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "Stab_ADSAdd",
+    "category": "Struct",
+    "pattern": "07 00 00 48 8B 8B ? ? ? ? 48 85 C9 74 06 E8 DC 4F 8A FF",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "Stab_ScopedMult",
+    "category": "Struct",
+    "pattern": "00 00 00 48 8B 82 ? ? ? ? 48 8B 48 30 49 89 8D 98 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "Attr_MinError",
+    "category": "Struct",
+    "pattern": "00 00 49 8B 85 ? ? ? ? 48 8D 55 FF 89 EF 83 E7 03 48",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "Attr_MoveError",
+    "category": "Struct",
+    "pattern": "FF 43 38 48 8B 8D ? ? ? ? 48 81 C1 E0 00 00 00 48 3B C8",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "Stab_DefaultErrorPower_Alt",
+    "category": "Struct",
+    "pattern": "48 8B EA 48 8B 8D ? ? ? ? E8 9B EC 34 F8 48 83 C4 20 5D",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "Controller",
+    "category": "Struct",
+    "pattern": "0F 58 D8 48 8B 85 ? ? ? ? 66 0F 6E 40 04 66 0F 70 D0 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "PawnController",
+    "category": "Struct",
+    "pattern": "0F 58 D8 48 8B 85 ? ? ? ? 66 0F 6E 40 04 66 0F 70 D0 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "ControllerPawn",
+    "category": "Struct",
+    "pattern": "EC 27 01 48 8B 85 ? ? ? ? 0F 11 30 4C 8D 85 B0 04 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "ControllerChar",
+    "category": "Struct",
+    "pattern": "EC 27 01 48 8B 85 ? ? ? ? 0F 11 30 0F 11 78 10 0F 28 35",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "GameViewport",
+    "category": "Struct",
+    "pattern": "00 00 01 8B 85 ? ? ? ? 89 05 ? ? ? ? C7 05 0D",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "TargetViewRotation",
+    "category": "Struct",
+    "pattern": "02 00 90 48 8B 8D ? ? ? ? 48 33 CC E8 ? ? ? ? 4C 8D",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "FacingControlRotation",
+    "category": "Struct",
+    "pattern": "6C 24 68 48 8B 81 ? ? ? ? 48 63 89 ? ? ? ? 48 8D 0C",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 13,
+    "disp_size": 4
+  },
+  {
+    "name": "ViewportClient",
+    "category": "Struct",
+    "pattern": "29 E5 45 8B 87 ? ? ? ? 4D 01 D6 4C 8D 1D C5 23 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "ViewportWorld",
+    "category": "Struct",
+    "pattern": "29 E5 45 8B 87 ? ? ? ? 4D 01 D6 4C 8D 1D C5 23 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "ViewportGI",
+    "category": "Struct",
+    "pattern": "00 00 45 8B 87 ? ? ? ? 4C 89 F1 E8 43 1E 01 00 41 8B",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "PawnFlags",
+    "category": "Struct",
+    "pattern": "00 00 4C 8B 85 ? ? ? ? 0F 84 99 12 00 00 66 41 0F 5A",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "InstanceComponents",
+    "category": "Struct",
+    "pattern": "04 00 00 8B 8D ? ? ? ? 41 39 CF 0F 8D C8 16 00 00 66",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "BlueprintCreatedComponents",
+    "category": "Struct",
+    "pattern": "16 CC 03 48 8B 8D ? ? ? ? F2 44 0F 12 41 08 F2 0F 12 09",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "Mesh1PMIDs",
+    "category": "Struct",
+    "pattern": "00 00 01 8B 85 ? ? ? ? 89 05 ? ? ? ? C7 05 D5",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "CompSpaceBones",
+    "category": "Struct",
+    "pattern": "07 00 00 8B 85 ? ? ? ? 89 05 49 36 4F 0B C7 05 43 36",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "SkinnedAsset",
+    "category": "Struct",
+    "pattern": "00 00 00 8B 85 ? ? ? ? 0B 85 14 07 00 00 0B 85 18 07",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "CapsuleRadius",
+    "category": "Struct",
+    "pattern": "8B 75 28 8B 85 ? ? ? ? 85 C0 78 0D 33 C0 44 8B E8 89",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "LastFrameCameraCache",
+    "category": "Struct",
+    "pattern": "41 56 41 57 48 83 EC 20 48 8B B9 ? ? ? ? 48 8B D9 E8 ? ? ? ? 8B 8B ? ? ? ? 45 33 FF",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 11,
+    "disp_size": 4
+  },
+  {
+    "name": "CamVmtIdx",
+    "category": "Struct",
+    "pattern": "00 00 41 8B 81 ? ? ? ? 41 89 82 20 01 00 00 41 8B 81",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "CamVmtIdxAlt",
+    "category": "Struct",
+    "pattern": "4C 24 20 8B 8D ? ? ? ? 89 54 24 28 44 89 54 24 48 4C",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "AssignedTeamState",
+    "category": "Struct",
+    "pattern": "0C 40 49 8B 87 ? ? ? ? 48 8D 1C C8 48 8D 4C 24 30 E8",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "GetTeamNumber",
+    "category": "Address",
+    "pattern": "8B C8 48 8B 43 38 48 39 14 C8 75 39 48 83 BB 20 01 00 00 00 75 13 48 8B",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "get_team_number",
+    "category": "Address",
+    "pattern": "8B C8 48 8B 43 38 48 39 14 C8 75 39 48 83 BB 20 01 00 00 00 75 13 48 8B",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "IsAlly",
+    "category": "Address",
+    "pattern": "48 8D 15 29 D5 A2 04 48 8D 0D ? ? ? ? E8 ? ? ? ? 48 8B 05",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "is_ally",
+    "category": "Address",
+    "pattern": "48 8D 15 29 D5 A2 04 48 8D 0D ? ? ? ? E8 ? ? ? ? 48 8B 05",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "bHasBomb",
+    "category": "Struct",
+    "pattern": "80 D8 FF 48 8B 8D ? ? ? ? 48 33 CC E8 03 95 88 07 48 81",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "PP_HideAccountLevel",
+    "category": "Struct",
+    "pattern": "07 00 00 48 8B 85 ? ? ? ? 48 2B C8 48 D1 F9 48 89 44 24",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "PP_AccountLevel",
+    "category": "Struct",
+    "pattern": "00 00 41 8B 81 ? ? ? ? 41 89 82 84 07 00 00 41 8B 81",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "PP_CompetitiveTier",
+    "category": "Struct",
+    "pattern": "00 00 41 8B 81 ? ? ? ? 41 89 82 94 07 00 00 41 8B 81",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "OldCachedLocation",
+    "category": "Struct",
+    "pattern": "89 47 1C 8B 83 ? ? ? ? 89 47 20 8B 83 10 12 00 00 89",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "MinimapHasBomb",
+    "category": "Struct",
+    "pattern": "54 24 58 48 8B 85 ? ? ? ? C5 FD 6F 10 8B 95 80 06 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "CharacterMinimap",
+    "category": "Struct",
+    "pattern": "02 00 90 8B 85 ? ? ? ? 89 85 30 04 00 00 8B 85 10 15",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "Ammo",
+    "category": "Struct",
+    "pattern": "01 00 00 8B 85 ? ? ? ? 2B C2 83 F8 11 73 0C 48 8D 8D",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "MaxAmmo",
+    "category": "Struct",
+    "pattern": "00 00 4D 8B 8F ? ? ? ? 41 0F B6 97 24 01 00 00 4C 89",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "ProjectileClass",
+    "category": "Struct",
+    "pattern": "0A 28 01 48 8B 85 ? ? ? ? 0F 11 30 48 8D 85 20 01 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "DroppedEq",
+    "category": "Struct",
+    "pattern": "08 EB 15 48 8B 80 ? ? ? ? 0F B7 08 EB 09 8B CE EB 05 B9",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "OwningPrimaryDataAsset",
+    "category": "Struct",
+    "pattern": "D9 16 0C 48 8B 85 ? ? ? ? C4 A1 60 59 1C 08 C4 E2 7D 18",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "ChromaDataAsset",
+    "category": "Struct",
+    "pattern": "49 8B C6 48 8B 8D ? ? ? ? 48 33 CC E8 D1 15 AC 07 4C 8D",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "SkinModelDataAsset",
+    "category": "Struct",
+    "pattern": "83 E4 E0 8B 85 ? ? ? ? C4 E2 7D 18 29 C4 E2 7D 18 59",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "EquippableDataAsset",
+    "category": "Struct",
+    "pattern": "83 E4 E0 8B 85 ? ? ? ? C4 E2 7D 18 29 C4 E2 7D 18 59",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "SkinAsset",
+    "category": "Struct",
+    "pattern": "83 E4 E0 8B 85 ? ? ? ? C4 E2 7D 18 29 C4 E2 7D 18 59",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "EquippedChroma",
+    "category": "Struct",
+    "pattern": "83 E4 C0 48 8B 85 ? ? ? ? 62 F1 7D 08 71 30 0F 62 F2 FE",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "EquippedSkin",
+    "category": "Struct",
+    "pattern": "F6 74 5C 48 8B 8F ? ? ? ? BA FF FF FF FF 84 DB 0F 45 15",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "ModelSkins",
+    "category": "Struct",
+    "pattern": "CC 00 00 8B 86 ? ? ? ? 29 86 40 02 00 00 48 89 F9 BA",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "PossibleSkins",
+    "category": "Struct",
+    "pattern": "CC 00 00 8B 86 ? ? ? ? 29 86 40 02 00 00 48 89 F9 BA",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "SkinMap",
+    "category": "Struct",
+    "pattern": "C6 86 ? ? ? ? 01 8B 46 38 09 43 44 F2 0F 10 46 20",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 2,
+    "disp_size": 4
+  },
+  {
+    "name": "ChromaMap",
+    "category": "Struct",
+    "pattern": "00 75 7B 8B 86 ? ? ? ? 0F 1F 84 00 00 00 00 00 85 C0",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "SprayModels",
+    "category": "Struct",
+    "pattern": "FA FF FF 8B 86 ? ? ? ? 8B 8E 94 02 00 00 83 C1 01 89",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "SprayMap",
+    "category": "Struct",
+    "pattern": "98 C9 4C 8B 85 ? ? ? ? 72 4C C5 FD 6F 0D 28",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "PlayerCardMap",
+    "category": "Struct",
+    "pattern": "8D 14 40 48 8B 85 ? ? ? ? 4A 8D 3C 10 4C 03 54 24 10 46",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "PlayerTitleMap",
+    "category": "Struct",
+    "pattern": "00 74 0D 48 8B 8D ? ? ? ? E8 ? ? ? ? 90 0F B6 C3 48",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "LevelBorderMap",
+    "category": "Struct",
+    "pattern": "08 00 00 48 8B 85 ? ? ? ? 44 8B 85 10 08 00 00 45 39 C2",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "EquippableSlot",
+    "category": "Struct",
+    "pattern": "0F 58 D8 48 8B 85 ? ? ? ? 66 0F 6E 40 04 66 0F 70 D0 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "EqModelEquippedCharm",
+    "category": "Struct",
+    "pattern": "F2 27 01 48 8B 85 ? ? ? ? 0F 11 30 0F 11 78 10 44 0F 11",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "BaseUIDataPtr",
+    "category": "Struct",
+    "pattern": "FF 74 32 48 8B 86 ? ? ? ? 48 85 C0 74 78 49 63 EE 48 C1",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "DisplayIcon",
+    "category": "Struct",
+    "pattern": "CC CC CC 48 8B 8A ? ? ? ? E9 24 54 36 F8 CC CC CC CC 48",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "ChromaFullRender",
+    "category": "Struct",
+    "pattern": "83 E4 E0 48 8B 85 ? ? ? ? 62 F1 7D 00 71 30 0F 8B 85 A0",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "ChromaFullRenderOverride",
+    "category": "Struct",
+    "pattern": "00 00 44 8B 8F ? ? ? ? 8B 97 A8 00 00 00 44 8B 87 AC",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "ChromaSwatch",
+    "category": "Struct",
+    "pattern": "C0 74 09 8B 82 ? ? ? ? 41 89 00 4C 8B 44 24 48 48 85",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "ZoomManager",
+    "category": "Struct",
+    "pattern": "48 8D 8F ? ? ? ? E8 ? ? ? ? 48 8D 8F 00 0D 00 00 E8",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 15,
+    "disp_size": 4
+  },
+  {
+    "name": "ZM_ZoomComponent",
+    "category": "Struct",
+    "pattern": "FA FF FF 48 8B 86 ? ? ? ? 48 C7 04 E8 00 00 00 00 48 83",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "Zoom_LevelInfo",
+    "category": "Struct",
+    "pattern": "16 CD 03 48 8B 85 ? ? ? ? F2 44 0F 12 68 08 F2 44 0F 12",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "OverlayMaterial",
+    "category": "Struct",
+    "pattern": "00 74 3D 48 8B 89 ? ? ? ? 48 85 C9 74 31 48 8B 01 0F 28",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "OverrideMaterials",
+    "category": "Struct",
+    "pattern": "8D 55 B8 48 8B 85 ? ? ? ? 48 85 C0 48 0F 45 D0 8D 41 FF",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "FresnelIntensity",
+    "category": "Struct",
+    "pattern": "02 00 00 8B 8E ? ? ? ? 89 8E 28 02 00 00 8A 96 63 02",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "BlindManager",
+    "category": "Struct",
+    "pattern": "FC 28 08 8B 85 ? ? ? ? 48 8B 9D F8 09 00 00 48 8B BD",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "SpikeDefuseSection",
+    "category": "Struct",
+    "pattern": "44 24 21 F3 0F 10 85 ? ? ? ? F3 0F 10 95 F4 05 00 00 F3 41",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 7,
+    "disp_size": 4
+  },
+  {
+    "name": "TimeRemainingToExplode",
+    "category": "Struct",
+    "pattern": "49 8B C6 48 8B 8D ? ? ? ? 48 33 CC E8 5A 0A B8 07 48 8B",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "DefuseProgress",
+    "category": "Struct",
+    "pattern": "E5 FF 90 48 8B 8D ? ? ? ? 48 85 C9 74 06 E8 02 BA E5 FF",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "k2_draw_line",
+    "category": "Address",
+    "pattern": "C9 74 2B 48 8B 01 33 D2 48 8B 00 FF 15 ? ? ? ? 41 B9 10 00 00 00 45 33 C0 48 8D 4C 24 20 E8 ? ? ? ? 44 89 7C 24 28 48 8B 4C 24 20 48 85 C9 74 06 E8 ? ? ? ? 90 48 8B C6",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "k2_draw_box",
+    "category": "Address",
+    "pattern": "48 83 C1 48 E9 D7 5D 01 00 CC CC CC CC CC CC CC 48 89 5C 24 08 48 89 74 24 10 57 48",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "k2_draw_text",
+    "category": "Address",
+    "pattern": "48 8B 47 10 FF 48 48 8B 44 24 20 41 89 06 48 85 FF 74 15 48 8B 07 BA 01 00 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "TinyFont",
+    "category": "Struct",
+    "pattern": "CC CC CC 48 8B 8A ? ? ? ? E9 E4 3F 3D F8 CC CC CC CC 48",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "SmallFont",
+    "category": "Struct",
+    "pattern": "CC CC CC 48 8B 8A ? ? ? ? E9 44 8F 37 F8 CC CC CC CC 48",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "LargeFont",
+    "category": "Struct",
+    "pattern": "08 74 47 48 8B 82 ? ? ? ? 49 89 00 8B 82 D0 00 00 00 41",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "AkAudioEvent",
+    "category": "Struct",
+    "pattern": "F9 27 01 48 8B 85 ? ? ? ? 0F 11 30 F2 0F 10 85 60 09 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "PropertiesSize",
+    "category": "Struct",
+    "pattern": "CC CC CC 48 8B 8A ? ? ? ? E9 D4 E8 37 F8 CC CC CC CC 48",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "RecoilRecoveryComp",
+    "category": "Struct",
+    "pattern": "6C 24 68 48 8B 81 ? ? ? ? 48 63 89 28 11 00 00 48 8D 0C",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "FlaggedErrorCurveComp",
+    "category": "Struct",
+    "pattern": "6C 24 68 48 8B 81 ? ? ? ? 48 63 89 ? ? ? ? 48 8D 0C",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 13,
+    "disp_size": 4
+  },
+  {
+    "name": "FlaggedStabilityComp",
+    "category": "Struct",
+    "pattern": "48 8B 8F ? ? ? ? 48 85 C9 74 06 E8 ? ? ? ? 90 48 8D 8F 08 11 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "StabilityVizComp",
+    "category": "Struct",
+    "pattern": "48 8B 07 48 8B CF 0F B6 54 24 30 48 8B 80 ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 14,
+    "disp_size": 4
+  },
+  {
+    "name": "StabilityVizManager",
+    "category": "Struct",
+    "pattern": "CC CC CC 48 8B 81 ? ? ? ? C3 CC CC CC CC CC CC CC CC 48",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "GunVFXStateComponent",
+    "category": "Struct",
+    "pattern": "48 8D 8F 08 11 00 00 E8 ? ? ? ? 90 48 8B 8F ? ? ? ? 48 85 C9 74 06",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 16,
+    "disp_size": 4
+  },
+  {
+    "name": "GunVOComponent",
+    "category": "Struct",
+    "pattern": "48 8B 8F ? ? ? ? 48 85 C9 74 06 E8 ? ? ? ? 90 48 8D 8F ? ? ? ? E8 ? ? ? ? 33 F6 89 B7",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 21,
+    "disp_size": 4
+  },
+  {
+    "name": "GunJammedStateComp",
+    "category": "Struct",
+    "pattern": "FF FF FF 8B 8D ? ? ? ? FF 15 ? ? ? ? 48 8B 9D E0",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "BulletComponent",
+    "category": "Struct",
+    "pattern": "11 00 00 48 8B 8D ? ? ? ? 48 85 C9 74 06 E8 4F 0C 70 FF",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "TaggingLevelComponent",
+    "category": "Struct",
+    "pattern": "48 8B 01 48 8B 80 ? ? ? ? FF 15 CA 4C B8 03 88 03 48 83",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "ScriptStateComponent",
+    "category": "Struct",
+    "pattern": "12 00 00 48 8B 8D ? ? ? ? 48 85 C9 74 06 E8 A2 C9 74 FF",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "AmmoResourceVizComp",
+    "category": "Struct",
+    "pattern": "88 3E 45 8B 86 ? ? ? ? 41 8D 40 01 41 89 86 30 11 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "AresAudioMgrComp",
+    "category": "Struct",
+    "pattern": "E7 FF 90 48 8B 8D ? ? ? ? 48 33 CC E8 ? ? ? ? 48 8B",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "Magazine_1P",
+    "category": "Struct",
+    "pattern": "00 00 01 8B 85 ? ? ? ? 89 05 CB 27 4F 0B C7 05 C5 27",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "EquippableStateMachine",
+    "category": "Struct",
+    "pattern": "00 00 01 8B 85 ? ? ? ? 89 05 AF 28 4F 0B C7 05 A9 28",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "EquippableFogOfWar",
+    "category": "Struct",
+    "pattern": "00 00 01 8B 85 ? ? ? ? 89 05 63 28 4F 0B C7 05 5D 28",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "EquippableEvent",
+    "category": "Struct",
+    "pattern": "1C 00 00 8B 85 ? ? ? ? 89 05 55 28 4F 0B C7 05 4F 28",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "EquippableAnimGraph",
+    "category": "Struct",
+    "pattern": "48 89 07 48 8B 83 ? ? ? ? 48 89 47 08 0F B6 83 00 12 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "EjectablesComponent",
+    "category": "Struct",
+    "pattern": "8B FA 4C 8B 8D ? ? ? ? 4C 8B 45 E8 8B 55 C0 48 8B CF",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "AmmoComponent",
+    "category": "Struct",
+    "pattern": "BB FD 90 48 8B 8B ? ? ? ? 48 85 C9 74 06 E8 71 D7 BB FD",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "ReloadStateComponent",
+    "category": "Struct",
+    "pattern": "12 00 00 48 8B 8D ? ? ? ? 48 85 C9 74 06 E8 B7 0B 70 FF",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "CrosshairComponent",
+    "category": "Struct",
+    "pattern": "EB B9 FE 48 8B 8D ? ? ? ? 48 85 C9 48 0F 45 C1 48 89 1C",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "EquipStateComponent",
+    "category": "Struct",
+    "pattern": "01 00 00 48 8B 85 ? ? ? ? 0F 28 00 44 8B 8D A8 11 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "ReadyingStateComponent",
+    "category": "Struct",
+    "pattern": "03 00 00 48 8B 85 ? ? ? ? 0F 28 00 8B B5 B0 11 00 00 48",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "FlaggedStabilityCompAlt",
+    "category": "Struct",
+    "pattern": "48 8B CE 48 8B 80 ? ? ? ? FF 15 2B 0E B8 03 90 48 8B 4C",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "StabilityVizCompAlt",
+    "category": "Struct",
+    "pattern": "0F B6 C3 48 8B 8D ? ? ? ? 48 33 CC E8 46 6A A9 07 48 8B",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "StabilityVizCompAlt2",
+    "category": "Struct",
+    "pattern": "00 00 90 48 8B 8B ? ? ? ? 48 85 C9 74 06 E8 95 D7 BB FD",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "AresOutlineComponentAlt2",
+    "category": "Struct",
+    "pattern": "7C A4 49 8B 8F ? ? ? ? 48 85 C9 74 0C E8 ? ? ? ?",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "AresOutlineComponentAlt3",
+    "category": "Struct",
+    "pattern": "48 8B 01 48 8B 80 ? ? ? ? FF 25 18 56 98 02 40 53 48 83",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "AresOutlineComponentAlt4",
+    "category": "Struct",
+    "pattern": "48 8B 01 48 8B 80 ? ? ? ? 48 FF 25 97 2C 99 02 CC CC CC",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "AresOutlineComponentAlt5",
+    "category": "Struct",
+    "pattern": "03 00 00 8B 87 ? ? ? ? 89 03 E9 D0 03 00 00 8B 8F F0",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "FS_NextShotRate",
+    "category": "Struct",
+    "pattern": "45 31 ED 8B 85 ? ? ? ? 41 39 C5 0F 8D 0B 12 00 00 66",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "Abilities",
+    "category": "Struct",
+    "pattern": "0A 00 00 48 8B 8D ? ? ? ? E9 91 15 00 00 C4 C2 7D 58 43",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "ASC_AttrSet",
+    "category": "Struct",
+    "pattern": "01 00 00 48 8B 85 ? ? ? ? C5 FD 41 C1 C5 FB 93 C8 0F B6",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "Attr_ReloadMod",
+    "category": "Struct",
+    "pattern": "7E 09 41 8B 81 ? ? ? ? EB 05 B8 FF FF FF FF 42 89 44",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "Attr_PreventReload",
+    "category": "Struct",
+    "pattern": "DE FF 90 48 8B 8B ? ? ? ? 48 85 C9 74 06 E8 B0 4B DE FF",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "Attr_ThirdPerson",
+    "category": "Struct",
+    "pattern": "E4 33 D2 48 8B 8D ? ? ? ? E8 ? ? ? ? 90 48 8D 8D B8",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "Attr_UltDisabled",
+    "category": "Struct",
+    "pattern": "54 24 58 48 8B 85 ? ? ? ? C5 FD 6F 10 8B 95 80 06 00 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "FoW_Audible",
+    "category": "Struct",
+    "pattern": "0F 57 F7 F3 0F 10 85 ? ? ? ? 0F 5A C0 66 0F 5A D8 0F 28 E6",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 7,
+    "disp_size": 4
+  },
+  {
+    "name": "FoW_Override",
+    "category": "Struct",
+    "pattern": "74 2A 4C 8B 8E ? ? ? ? 4D 85 C9 74 1E 4C 8B 86 00 02",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "ConcussEnd",
+    "category": "Struct",
+    "pattern": "E0 4A 00 8B 8D ? ? ? ? 8B 95 D8 00 00 00 8D 04 16 89",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "FogOfWarComp",
+    "category": "Struct",
+    "pattern": "00 00 00 8B 85 ? ? ? ? 89 05 25 3A 4F 0B C7 05 1F 3A",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "AimToolingComp",
+    "category": "Struct",
+    "pattern": "48 8B 42 20 45 33 C9 48 85 C0 41 0F 95 C1 4C 03 C8 4C 89 4A 20 48 8B 81 ? ? ? ? 49 89 00 C3",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 24,
+    "disp_size": 4
+  },
+  {
+    "name": "MoveToolingComp",
+    "category": "Struct",
+    "pattern": "48 8B 42 20 45 33 C9 48 85 C0 41 0F 95 C1 4C 03 C8 4C 89 4A 20 48 8B 81 ? ? ? ? 49 89 00 C3",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 24,
+    "disp_size": 4
+  },
+  {
+    "name": "AT_Enabled",
+    "category": "Struct",
+    "pattern": "8B 48 60 48 8B 89 ? ? ? ? 48 89 0D ? ? ? ? 48 C7 05",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "AT_Features",
+    "category": "Struct",
+    "pattern": "06 00 00 48 8B 8D ? ? ? ? 0F 84 C1 08 00 00 C5 BC 54 84",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "MT_Enabled",
+    "category": "Struct",
+    "pattern": "C9 74 0E 48 8B 81 ? ? ? ? 48 85 C0 74 02 FF D0 FF 15 2B",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "MT_Features",
+    "category": "Struct",
+    "pattern": "FA FF FF 48 8B 86 ? ? ? ? 48 C7 04 E8 00 00 00 00 48 83",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "TuningAsset",
+    "category": "Struct",
+    "pattern": "48 8B 01 48 8B 80 ? ? ? ? 48 FF 25 57 2B 18 08 CC CC CC",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "AT_Pull",
+    "category": "Struct",
+    "pattern": "ED B8 DC 48 8B 85 ? ? ? ? C4 E2 ED A8 DF C5 E5 59 C9 C5",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "AT_Friction",
+    "category": "Struct",
+    "pattern": "2C C2 49 8B 8E ? ? ? ? 66 89 01 F2 41 0F 59 08 F2 0F",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "AT_Module",
+    "category": "Struct",
+    "pattern": "48 8B 01 48 85 C0 74 ? 48 8B 50 ? 48 85 D2 0F 85",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 11,
+    "disp_size": 1
+  },
+  {
+    "name": "MT_Module",
+    "category": "Struct",
+    "pattern": "48 8B 01 48 85 C0 74 ? 48 8B 50 ? 48 85 D2 0F 85",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 11,
+    "disp_size": 1
+  },
+  {
+    "name": "death_reaction_component_offset",
+    "category": "Struct",
+    "pattern": "01 00 00 8B 85 ? ? ? ? 8D 48 03 85 C0 0F 49 C8 83 E1",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "montage_effect_override_offset",
+    "category": "Struct",
+    "pattern": "C9 74 0E 48 8B 81 ? ? ? ? 48 85 C0 74 02 FF D0 FF 15 2B",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "montage_effect_override_context_offset",
+    "category": "Struct",
+    "pattern": "00 00 4C 8B 8F ? ? ? ? 89 44 24 20 48 89 F1 45 31 C0",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "GameObjectMesh",
+    "category": "Struct",
+    "pattern": "00 00 4C 8B 85 ? ? ? ? 0F 84 99 12 00 00 66 41 0F 5A",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "PlayFXC_Sphere",
+    "category": "Struct",
+    "pattern": "EC 27 01 48 8B 85 ? ? ? ? 0F 11 30 0F 11 78 10 0F 28 35",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "SmokeExpandDuration",
+    "category": "Struct",
+    "pattern": "00 00 4C 8B 85 ? ? ? ? 4C 8B 95 30 05 00 00 45 33 ED",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "SmokeDuration",
+    "category": "Struct",
+    "pattern": "00 74 0D 48 8B 8D ? ? ? ? E8 ? ? ? ? 90 0F B6 C3 48",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "SmokeContractDuration",
+    "category": "Struct",
+    "pattern": "E5 FF 90 48 8B 8D ? ? ? ? 48 85 C9 74 06 E8 2B BF E5 FF",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "SkeletalMeshAsset",
+    "category": "Struct",
+    "pattern": "00 00 00 8B 85 ? ? ? ? 89 05 25 3A 4F 0B C7 05 1F 3A",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "PhysicsAsset",
+    "category": "Struct",
+    "pattern": "FA FF FF 8B 86 ? ? ? ? 8B 8E 94 02 00 00 83 C1 01 89",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "SkeletalBodySetups",
+    "category": "Struct",
+    "pattern": "CC CC CC 48 8B 8A ? ? ? ? E9 64 C3 36 F8 CC CC CC CC 40",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "GameUserSettings",
+    "category": "Struct",
+    "pattern": "00 00 44 8B 85 ? ? ? ? C4 C1 79 6E C0 C4 62 7D 58 D0",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "bUseVSync",
+    "category": "Struct",
+    "pattern": "CC CC CC 48 8B 8A ? ? ? ? E9 04 6F 36 F8 CC CC CC CC 48",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "ResolutionSizeX",
+    "category": "Struct",
+    "pattern": "4A 08 4C 8B 82 ? ? ? ? C5 79 14 F4 C4 63 0D 18 F1 01",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "ResolutionSizeY",
+    "category": "Struct",
+    "pattern": "00 00 45 8B 87 ? ? ? ? 4C 89 F1 E8 BB 22 01 00 41 8B",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "AresSettingsManager",
+    "category": "Struct",
+    "pattern": "A8 80 09 48 8B 85 ? ? ? ? C5 DD 59 C9 C5 F5 58 0D 41 A8",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "FloatSettingValues",
+    "category": "Struct",
+    "pattern": "00 00 4D 8B 86 ? ? ? ? 48 83 C2 01 49 8D 8E 28 02 00",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "IntSettingValues",
+    "category": "Struct",
+    "pattern": "03 00 00 48 8B 85 ? ? ? ? 48 BF 00 00 00 00 00 00 F0 3F",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "BoolSettingValues",
+    "category": "Struct",
+    "pattern": "04 00 00 8B 8D ? ? ? ? 41 39 CF 0F 8D C8 16 00 00 66",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "StringSettingValues",
+    "category": "Struct",
+    "pattern": "DE FF 90 48 8B 8B ? ? ? ? 48 85 C9 74 06 E8 B0 4B DE FF",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "LastSpectatorSyncLocation",
+    "category": "Struct",
+    "pattern": "08 EB 15 48 8B 80 ? ? ? ? 0F B7 08 EB 09 8B CE EB 05 B9",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "LastSpectatorSyncRotation",
+    "category": "Struct",
+    "pattern": "F7 FF 90 48 8B 8D ? ? ? ? 48 85 C9 74 06 E8 56 D9 CF FF",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "AuthorityGameMode",
+    "category": "Struct",
+    "pattern": "00 00 4C 8B 85 ? ? ? ? 0F 84 99 12 00 00 66 41 0F 5A",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "ClientGameInstance",
+    "category": "Struct",
+    "pattern": "33 C9 44 8B 85 ? ? ? ? 48 8B 95 B0 02 00 00 48 8D 8D",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "MyEquippable",
+    "category": "Struct",
+    "pattern": "08 EB 15 48 8B 80 ? ? ? ? 0F B7 08 EB 09 8B CE EB 05 B9",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "EquippedCharmInstance",
+    "category": "Struct",
+    "pattern": "F2 27 01 48 8B 85 ? ? ? ? 0F 11 30 0F 11 78 10 44 0F 11",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "EquippableCharmDataAsset",
+    "category": "Struct",
+    "pattern": "00 00 45 8B 8E ? ? ? ? 45 0F B7 86 66 02 00 00 49 8B",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 5,
+    "disp_size": 4
+  },
+  {
+    "name": "EquippableCharmLevelDataAsset",
+    "category": "Struct",
+    "pattern": "F0 27 01 48 8B 85 ? ? ? ? 0F 11 30",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 6,
+    "disp_size": 4
+  },
+  {
+    "name": "has_active_events",
+    "category": "Address",
+    "pattern": "00 00 00 48 39 08 74 11 0F 1F 84 00 00 00 00 00 48 8B 40 10 48 39 08 75 F7 48 8B 48 08 48 89 4B 38 48 89 73 40 EB 28 48 63 41 44 48 8D 54 24 48",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 0,
+    "disp_size": 0
+  },
+  {
+    "name": "bIsSelf",
+    "category": "Struct",
+    "pattern": "C6 84 24 ? ? ? ? FF C6 84 24 8E 06 00 00 0C C6 84 24 8F 06",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "Stab_ErrorPowers",
+    "category": "Struct",
+    "pattern": "C6 84 24 ? ? ? ? FF C6 84 24 C5 1A 00 00 FF C6 84 24",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "Stab_InstabilityBank",
+    "category": "Struct",
+    "pattern": "C7 45 ? ? ? ? 00 0F 28 35 BF EE A1 0B C7 85 A0 07",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 2,
+    "disp_size": 4
+  },
+  {
+    "name": "bAIControlled",
+    "category": "Struct",
+    "pattern": "C6 84 24 ? ? ? ? CF C6 84 24 ED 14 00 00 FF C6 84 24",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 3,
+    "disp_size": 4
+  },
+  {
+    "name": "MinimapIsAlive",
+    "category": "Struct",
+    "pattern": "8C 24 ? ? ? ? 07 E9 D8 E6 FF FF C5 F8 57 C0 4C 8B",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 2,
+    "disp_size": 4
+  },
+  {
+    "name": "PortraitMinimap",
+    "category": "Struct",
+    "pattern": "29 A5 ? ? ? ? C5 79 29 9D E0 14 00 00 C5 79 29 95 D0 14 00 00 C5 79 7F 8D",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 2,
+    "disp_size": 4
+  },
+  {
+    "name": "Attr_Current",
+    "category": "Struct",
+    "pattern": "08 E0 ? 48 33 C4 48 89 44 24 68 0F B6 02 48",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 2,
+    "disp_size": 1
+  },
+  {
+    "name": "MT_FastStrafe",
+    "category": "Struct",
+    "pattern": "EC 48 ? 8B D9 48 8B 8C 24 80 00 00 00 48 85",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 2,
+    "disp_size": 1
+  },
+  {
+    "name": "post_render",
+    "category": "Struct",
+    "pattern": "1A 62 ? FD 08 16 D2 01 62 63 25 20 18 12 01 62 61 7C 28 28 1D 99",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 2,
+    "disp_size": 1
+  },
+  {
+    "name": "pe_index",
+    "category": "Struct",
+    "pattern": "00 41 57 41 56 56 57 ? 48 83 EC 30 4C 89 CE 4C",
+    "xref_offset": 0,
+    "xref_instr_size": 0,
+    "disp_offset": 7,
+    "disp_size": 1
+  }
+]
