@@ -1874,7 +1874,7 @@
   {
     "name": "Stab_DefaultErrorPower",
     "category": "Struct",
-    "pattern": "48 8B EA 48 8B 8D ? ? ? ? E8 9B CC 34 F8 48 83 C4 20 5D",
+    "pattern": "48 8B EA 48 8B 8D ? ? ? ? E8 9B EC 34 F8 48 83 C4 20 5D",
     "xref_offset": 0,
     "xref_instr_size": 0,
     "disp_offset": 6,
@@ -1955,7 +1955,7 @@
   {
     "name": "Stab_DefaultErrorPower_Alt",
     "category": "Struct",
-    "pattern": "48 8B EA 48 8B 8D ? ? ? ? E8 9B CC 34 F8 48 83 C4 20 5D",
+    "pattern": "48 8B EA 48 8B 8D ? ? ? ? E8 9B EC 34 F8 48 83 C4 20 5D",
     "xref_offset": 0,
     "xref_instr_size": 0,
     "disp_offset": 6,
@@ -1991,7 +1991,7 @@
   {
     "name": "ControllerChar",
     "category": "Struct",
-    "pattern": "ED 27 01 48 8B 85 ? ? ? ? 0F 11 30 0F 11 78 10 0F 28 35",
+    "pattern": "EC 27 01 48 8B 85 ? ? ? ? 0F 11 30 0F 11 78 10 0F 28 35",
     "xref_offset": 0,
     "xref_instr_size": 0,
     "disp_offset": 6,
@@ -3017,7 +3017,7 @@
   {
     "name": "ConcussEnd",
     "category": "Struct",
-    "pattern": "E1 4A 00 8B 8D ? ? ? ? 8B 95 D8 00 00 00 8D 04 16 89",
+    "pattern": "E0 4A 00 8B 8D ? ? ? ? 8B 95 D8 00 00 00 8D 04 16 89",
     "xref_offset": 0,
     "xref_instr_size": 0,
     "disp_offset": 5,
@@ -3170,7 +3170,7 @@
   {
     "name": "PlayFXC_Sphere",
     "category": "Struct",
-    "pattern": "ED 27 01 48 8B 85 ? ? ? ? 0F 11 30 0F 11 78 10 0F 28 35",
+    "pattern": "EC 27 01 48 8B 85 ? ? ? ? 0F 11 30 0F 11 78 10 0F 28 35",
     "xref_offset": 0,
     "xref_instr_size": 0,
     "disp_offset": 6,
